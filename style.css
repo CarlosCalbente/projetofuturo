@@ -1,3 +1,24 @@
+:root {
+    --sidebar: #182436;
+    --sidebar-hover: #2B3A50;
+
+    --background: #F5F7FA;
+    --card: #FFFFFF;
+
+    --text-primary: #111827;
+    --text-secondary: #64748B;
+    --border: #E2E8F0;
+
+    --green:    #22B573;
+    --red: #FF4D57;
+    --blue: #347FF3;
+    --purple: #8155E8;
+
+    --orange: #FF922B;
+    --pink: #F43F6E;
+    --yellow: #F6C453;
+    --gray: #94A3B8;
+}
 #title{
     background-color: whitesmoke;
     text-align: center;
@@ -7,5 +28,11 @@
 }
 #sidebar{
     text-align: left;
-    
+    background-color: var(--sidebar);
+    color: var(--card);
 }
+#foto1{
+    width: 20px;
+    height: 20px;
+}
+
