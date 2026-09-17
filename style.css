@@ -17,10 +17,15 @@
     --orange: #FF922B;
     --pink: #F43F6E;
     --yellow: #F6C453;
-    --gray: #94A3B8;
+    --gray: #94a3b8;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
 #title{
-    background-color: var(--background);
+    background-color: var(--purple);
     text-align: center;
     height: 10vh;
     margin:0;
@@ -36,7 +41,7 @@
 .lista{
     list-style: none;
 }
-#foto1{
+.foto1{
     width: 25px;
     height: 25px;
 
