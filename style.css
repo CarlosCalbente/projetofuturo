@@ -30,6 +30,10 @@
     height: 10vh;
     margin:0;
 }
+main{
+    display: flex;
+    align-items: stretch;
+}
 #sidebar{
     text-align: left;
     background-color: var(--sidebar);
