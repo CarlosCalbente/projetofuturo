@@ -7,8 +7,12 @@
 
     --text-primary: #111827;
     --text-secondary: #64748B;
+    --text1: #FFFFFF;
     --border: #E2E8F0;
 
+    --verde: #22B573;
+    --vermelho: #FF4D57;
+    
     --green:    #22B573;
     --red: #FF4D57;
     --blue: #347FF3;
@@ -24,11 +28,18 @@
     box-sizing: border-box;
     padding: 0;
 }
+/* ============================= BODY============================================ */
+body{
+    background-color:var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--text-primary)
+}
 #title{
-    background-color: var(--purple);
+    background-color: var(--sidebar);
     text-align: center;
     height: 10vh;
     margin:0;
+    color: var(--text1);
 }
 main{
     display: flex;
@@ -38,9 +49,10 @@ main{
     text-align: left;
     background-color: var(--sidebar);
     color: var(--card);
-    width: 200px;
+    width: 250px;
     height: 80vh;
-
+    justify-content: center;
+    font-size: 14px;
 }
 .lista{
     list-style: none;
@@ -49,6 +61,47 @@ main{
     width: 25px;
     height: 25px;
 
+}
+#cards{
+    display:grid;
+    padding: 20px 10px;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 22px;
+    gap:10px;
+}
+
+.card{
+    background-color: var(--card);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.4);
+}
+.painel{
+    display: grid;
+    background-color:var(--card);
+    border-radius: 10px;
+    padding:20px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.4);
+    grid-template-columns: 1fr 1fr;
+}
+.legenda{
+    display: flex;
+    gap: 18px;
+}
+.legenda p{
+    display:flex;
+    align-items:center;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.quadrado {
+    width: 15px;
+    height: 15px;
+}
+.bolinha {
+    width: 20px;
+    height: 20px
 }
 
 

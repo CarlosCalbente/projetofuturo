@@ -93,29 +93,166 @@
             </div>
 <!-- ===================================CARDS======================================================= -->
                 <div id="cards">
-                    <div> 
-                        <p>Receitas</p>
+                    <div class="card">
+                        <div class="title-card">
+                            <p>Receitas</p>
+                        </div>
                         <p></p>
                         <p>em relação ao mês anterior</p>
                     </div>
-                    <div>                    
-                        <p>Despesas</p>
+
+                    <div class="card">
+                        <div class="title-card">      
+                            <p>Despesas</p>
+                        </div> 
                         <p></p>
                         <p>em relação ao mês anterior</p>
                     </div>
-                    <div>
+
+                    <div class="card">
+                        <div class="title-card">
+                            <p>Saldo</p>
+                        </div>
                         <p>Saldo do Mês</p>
                         <p></p>
                         <p>em relação ao mês anterior</p>
                     </div>
-                    <div>
-                        <p>Meta de Economia</p>
+
+                    <div class="card">
+                        <div class="title-card">    
+                            <p>Meta de Economia</p>
+                        </div>
                         <p></p>
                         <p></p>
                     </div>
                 </div>
         </div>
     </div>
+
+<!-- ===================================GRAFICOS======================================================= -->
+    <div id="painel">
+
+    <!-- =======================RECEITAS E DESPESAS================================= -->
+    <div id="grafico1">
+        <div class="title-grafico">
+            <p>Receitas e Despesas</p>
+        </div>
+        <div class="legenda">
+            <p>
+                <img class="quadrado" src="img/green.png">
+                Receitas
+            </p>
+            <p>
+                <img class="quadrado" src="img/red.png">
+                Despesas
+            </p>
+        </div>
+        <canvas id="graficobarras"></canvas>
+    </div>
+
+    <!-- =======================DESPESAS POR CATEGORIA================================= -->
+
+    <div id="grafico2">
+        <div class="title-grafico">
+            <p>Despesas por Categoria</p>
+        </div>
+        <div class="legenda1">
+            <span >
+                <img class="bolinha" src="img/moradia.png">
+                Moradia
+                <p class="moradia"></p>
+            </span>
+            <span>
+                <img class="bolinha" src="img/alimentacao.png">
+                Alimentação
+                <p class="alimentacao"></p>
+            </span>
+            <span> 
+                <img class="bolinha" src="img/transporte.png">
+                Transporte
+                <p class="transporte"></p>
+            </span>
+            <span>
+                <img class="bolinha" src="img/saude.png">
+                Saúde
+                <p class="saude"></p>
+            </span>
+            <span>
+                <img class="bolinha" src="img/lazer.png">
+                Lazer
+                <p class="lazer"></p>
+            </span>
+            <span>
+                <img class="bolinha" src="img/educacao.png">
+                Educação
+                <p class="educacao"></p>
+            </span>
+            <span>
+                <img class="bolinha" src="img/outros.png">
+                Outros
+                <p class="outros"></p>
+            </span>
+        </div>
+        
+        <canvas id="graficoredondo"></canvas>
+    </div>
+
+    <!-- =======================Ultimas Transações================================= -->
+
+    <div id="transacoes">
+        <div class="title-transacoes">
+            <p>Últimas Transações</p>
+        </div>
+            <table>
+                <thead>
+                    <tr class="infos">
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+</div>
 </main>
 </body>
 </html>
