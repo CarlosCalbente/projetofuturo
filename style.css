@@ -40,6 +40,9 @@ body{
     height: 10vh;
     margin:0;
     color: var(--text1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main{
     display: flex;
@@ -53,10 +56,41 @@ main{
     height: 80vh;
     justify-content: center;
     font-size: 14px;
+    flex-shrink: 0;/*
+        shrink = encolher.
+        0 significa NÃO deixar a sidebar encolher.*/
+    min-height: 100vh;
+}
+
+#sidebar p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#text{
+    font-size: 25px;
+}
+.foto2{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 .lista{
     list-style: none;
 }
+.lista li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lista li img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
 .foto1{
     width: 25px;
     height: 25px;
@@ -103,5 +137,10 @@ main{
     width: 20px;
     height: 20px
 }
-
+#graficobarras{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-top:20px;
+}
 
