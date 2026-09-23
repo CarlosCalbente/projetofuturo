@@ -90,6 +90,14 @@ main{
     object-fit: contain;
 }
 
+.lista li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text1);
+}
+
 
 .foto1{
     width: 25px;
@@ -144,3 +152,5 @@ main{
     margin-top:20px;
 }
 
+
+/*  ===========================================CATEGORIAS========================================  */
