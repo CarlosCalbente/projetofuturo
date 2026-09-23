@@ -100,15 +100,15 @@
                             <div class="title-card">
                                 <p>Receitas</p>
                             </div>
-                            <p></p>
-                            <p>em relação ao mês anterior</p>
+                            <p id="valor-receitas"></p>
+                            <p id="anteriorR">em relação ao mês anterior</p>
                         </div>
 
                         <div class="card">
                             <div class="title-card">      
                                 <p>Despesas</p>
                             </div> 
-                            <p></p>
+                            <p id="valor-despesas"></p>
                             <p>em relação ao mês anterior</p>
                         </div>
 
@@ -117,7 +117,7 @@
                                 <p>Saldo</p>
                             </div>
                             <p>Saldo do Mês</p>
-                            <p></p>
+                            <p id="valor-saldo"></p>
                             <p>em relação ao mês anterior</p>
                         </div>
 
@@ -125,13 +125,16 @@
                             <div class="title-card">    
                                 <p>Meta de Economia</p>
                             </div>
-                            <p></p>
-                            <p></p>
+                            <p id="valor-meta"></p>
+                            <p id="percentual-meta"></p>
+                            <div class="barra-fundo">
+                                <div class="barra-preenchimento" id="barra-meta"></div>
+                            </div>
                         </div>
                     </div>
             </div>
-        </div>
 
+    <!-- ALTERADO: painel movido para dentro da #conteudo (antes estava fora, como irmã dela, e o main{display:flex} colocava tudo lado a lado) -->
     <!-- ===================================GRAFICOS======================================================= -->
     <div class="painel">
 
@@ -148,6 +151,16 @@
                 <p>
                     <img class="quadrado" src="img/red.png">
                     Despesas
+                </p>
+                <!-- ALTERADO: </p> acima estava sem fechar -->
+            </div>
+            <!-- ALTERADO: </div> acima fecha a .legenda, que estava sem fechar -->
+
+            <!-- ALTERADO: canvas adicionado -- o style.css já tinha a regra #graficobarras pronta, mas o elemento nunca existia no HTML -->
+            <canvas id="graficobarras"></canvas>
+        </div>
+        <!-- ALTERADO: </div> acima fecha o #grafico1, que estava sem fechar (por isso grafico2 e transacoes ficavam "engolidos" para dentro dele) -->
+
         <!-- =======================DESPESAS POR CATEGORIA================================= -->
 
         <div id="grafico2">
@@ -251,6 +264,11 @@
                 </table>
         </div>
     </div>
+    </div>
+    <!-- ALTERADO: </div> acima fecha a #conteudo, que agora só fecha depois do .painel (antes fechava logo após os cards) -->
     </main>
+
+    <!-- Liga o HTML ao JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
