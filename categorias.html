@@ -22,28 +22,6 @@
     <header>
         <h1 id="topo">Categorias</h1>
         <p>Organize e acompanhe suas categorias financeiras.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </header>
 
     <!-- ==========================================CONTEUDO PRINCIPAL================================-->
@@ -58,7 +36,7 @@
                 Minhas Finanças
             </p>
 
-            <ul class="lista">
+            <div class="lista">
                 <li>
                     <a href="index.html">
                         <img class="foto1"
@@ -113,13 +91,142 @@
                         Configurações
                     </a>
                 </li>
-            </ul>
+            </div>
         </nav>
 
-    <!-- ===================================CONTEUDO DA DIREITA====================================== -->
+    <!-- ===================================CONTEUDO DA DIREITA======================================== -->
 
+        <div id="conteudo">
+
+    <!-- ===================================TOPO======================================================= -->
+
+            <div id="topo">
+                <div>
+                    <h1 id="topo">Categorias</h1>
+                    <p>Organize e acompanhe suas categorias financeiras.</p>
+                </div>
+
+    <!-- ===================================CARDS======================================================= -->
+        <div class="card-categoria">
+                <div class="card-categorias">
+                        <div class="iconeC">
+                            <img src="img/categorias.png">
+                        </div>
+                        <div class="infoC">
+                            <p>Total de categorias</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                </div>
+                    
+                <div class="card-categorias">
+                        <div class="iconeC">
+                            <img src="img/receita-circulo.png">
+                        </div>
+                        <div class="infoC">
+                            <p>Categoria de Receitas</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                </div>
+
+                <div class="card-categorias">
+                        <div class="iconeC">
+                            <img src="img/despesa-circulo.png">
+                        </div>
+                        <div class="infoC">
+                            <p>Categorias de despesa</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- =======================SUAS CATEGORIAS================================ -->
+<!--         <header class="Scategorias">
+            <h2>Suas Categorias</h2>
+        </header>
+ -->
         
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- =======================DISTRIBUIÇÃO DE CATEGORIAS================================ -->
+        <div id="grafico2">
+            <div class="title-grafico">
+                <p>Despesas por Categoria</p>
+            </div>
+            <div class="legenda1">
+                <span >
+                    <img class="bolinha" src="img/moradia.png">
+                    Moradia
+                    <p class="moradia"></p>
+                </span>
+                <span>
+                    <img class="bolinha" src="img/alimentacao.png">
+                    Alimentação
+                    <p class="alimentacao"></p>
+                </span>
+                <span> 
+                    <img class="bolinha" src="img/transporte.png">
+                    Transporte
+                    <p class="transporte"></p>
+                </span>
+                <span>
+                    <img class="bolinha" src="img/saude.png">
+                    Saúde
+                    <p class="saude"></p>
+                </span>
+                <span>
+                    <img class="bolinha" src="img/lazer.png">
+                    Lazer
+                    <p class="lazer"></p>
+                </span>
+                <span>
+                    <img class="bolinha" src="img/educacao.png">
+                    Educação
+                    <p class="educacao"></p>
+                </span>
+                <span>
+                    <img class="bolinha" src="img/outros.png">
+                    Outros
+                    <p class="outros"></p>
+                </span>
+            </div>
+            
+            <canvas id="graficoredondo"></canvas>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
