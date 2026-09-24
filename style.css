@@ -162,11 +162,15 @@ main{
     gap:100px;
 }
 
-.card-categorias{
+.card-categorias {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
     background-color: var(--card);
     border-radius: 10px;
     padding: 40px;
-    box-shadow: 0 3px 10px rgb(0,0,0,0.4);
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.4);
     width: 400px;
 }
 
@@ -174,3 +178,10 @@ main{
     width: 60px;
     height: 60px;
 }
+/*  ===========================================CATEGORIAS========================================  */
+
+
+
+
+
+/*  ===========================================CATEGORIAS========================================  */
