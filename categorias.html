@@ -19,10 +19,7 @@
 
 <body>
 <!-- ===========================================CABEÇALHO======================================== -->
-    <header>
-        <h1 id="topo">Categorias</h1>
-        <p>Organize e acompanhe suas categorias financeiras.</p>
-    </header>
+
 
     <!-- ==========================================CONTEUDO PRINCIPAL================================-->
 
@@ -144,10 +141,20 @@
         </div>
         <!-- =======================SUAS CATEGORIAS================================ -->
         
-<!--         <header class="Scategorias">
+        <div class="infocat">
             <h2>Suas Categorias</h2>
-        </header>
- -->
+
+                <select id="filtro-categorias">
+                    <option value="todas">Todas as categorias</option>
+                    <option value="receita">Receitas</option>
+                    <option value="despesas">Despesas</option>
+                </select>
+                
+        </div>
+
+        <div>
+            
+        </div>  
         
 
 
@@ -171,55 +178,6 @@
 
 
         <!-- =======================DISTRIBUIÇÃO DE CATEGORIAS================================ -->
-        <div id="grafico2">
-            <div class="title-grafico">
-                <p>Despesas por Categoria</p>
-            </div>
-            <div class="legenda1">
-                <span >
-                    <img class="bolinha" src="img/moradia.png">
-                    Moradia
-                    <p class="moradia"></p>
-                </span>
-                <span>
-                    <img class="bolinha" src="img/alimentacao.png">
-                    Alimentação
-                    <p class="alimentacao"></p>
-                </span>
-                <span> 
-                    <img class="bolinha" src="img/transporte.png">
-                    Transporte
-                    <p class="transporte"></p>
-                </span>
-                <span>
-                    <img class="bolinha" src="img/saude.png">
-                    Saúde
-                    <p class="saude"></p>
-                </span>
-                <span>
-                    <img class="bolinha" src="img/lazer.png">
-                    Lazer
-                    <p class="lazer"></p>
-                </span>
-                <span>
-                    <img class="bolinha" src="img/educacao.png">
-                    Educação
-                    <p class="educacao"></p>
-                </span>
-                <span>
-                    <img class="bolinha" src="img/outros.png">
-                    Outros
-                    <p class="outros"></p>
-                </span>
-            </div>
-            
-            <canvas id="graficoredondo"></canvas>
-        </div>
-
-
-
-
-
 
 
 

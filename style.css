@@ -180,7 +180,13 @@ main{
 }
 /*  ===========================================CATEGORIAS========================================  */
 
+.infocat {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 
+
+}
 
 
 
