@@ -255,3 +255,14 @@ main{
     padding: 10px;
 }
 
+#newtrans {
+grid-column: 3;
+display: flex;
+flex-direction: column;
+gap: 10px;
+background-color:seagreen;
+font-weight: bold;
+padding: 10px;
+
+
+}
