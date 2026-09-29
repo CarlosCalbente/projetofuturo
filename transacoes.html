@@ -30,7 +30,7 @@
 
         <nav id="sidebar">
             <p id="text">
-                <img  class="foto2"   src="img/balanca.png">
+                <img class="foto2" src="img/balanca.png">
                 Minhas Finanças
             </p>
 
@@ -88,67 +88,123 @@
 
 <!-- ===========================================TOPO======================================== -->
             
-    <div id="conteudo">
+        <div id="conteudo">
 
-        <div id="topo">
-            <div id="boas-vindas">
+            <div id="topo">
+                <div id="boas-vindas">
                     <h3>Transações</h3>
-                <p>Acompanhe todas as suas movimentações financeiras.</p>
+                    <p>Acompanhe todas as suas movimentações financeiras.</p>
                 </div>
 
-            <div>
-                <button type="inserir_transacao">+ Nova Transação</button>
-            </div>
-    <div id="buscas">
-        <div class="buscar">
+                <div>
+                    <button id="botao_ntransacao" type="button">+ Nova Transação</button>
+                </div>
 
-        </div>
-        <div class="mes_ano">
-            
-        </div>
-        <div class="busca_categoria">
+                <div id="buscas">
+                    <div class="buscar">
 
-        </div>
+                    </div>
 
-    </div>    
+                    <div class="mes_ano">
+                        
+                    </div>
+
+                    <div class="busca_categoria">
+
+                    </div>
+                </div>    
 
 <!-- ===================================CARDS======================================================= -->
-            <div id="cards">
-                <div class="card">
-                    <div class="title-card">
-                        <p>Entradas</p>
+
+                <div id="cards">
+                    <div class="card">
+                        <div class="title-card">
+                            <p>Entradas</p>
+                        </div>
+                        <p id="valor-entradas"></p>
+                        <p id="anteriorR">Ultima entrada</p>
                     </div>
-                    <p id="valor-entradas"></p>
-                    <p id="anteriorR">Ultima entrada</p>
+
+                    <div class="card">
+                        <div class="title-card">
+                            <p>Saídas</p>
+                        </div>
+                        <p id="valor-saidas"></p>
+                        <p id="anteriorR">Ultima saída</p>
+                    </div>
+                        
+                    <div class="card">
+                        <div class="title-card">
+                            <p>Saldo do Mês</p>
+                        </div>
+                        <p id="valor-saldo"></p>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <div class="title-card">
-                        <p>Saídas</p>
-                    </div>
-                    <p id="valor-saidas"></p>
-                    <p id="anteriorR">Ultima saída</p>
-                </div>
-                    
-                <div class="card">
-                    <div class="title-card">
-                        <p>Saldo do Mês</p>
-                    </div>
-                    <p id="valor-saldo"></p>
-                    
-                </div>
-    </div>
-        </div>
-                </div>
+            </div>
             
+<!-- =======================DESPESAS POR CATEGORIA================================= -->
 
+            <div id="transacoes">
+                <p id="listagem_transacao">Lista de Transações</p>
 
+                <div id="quantidade_transacoes">
+                    <p id="numeracao_transacoes">Mostrando 0 transações</p>
+                </div>
 
+                <table>
+                    <thead>
+                        <tr class="title-transacoes">
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>categoria</th>
+                            <th>Tipo</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
 
+                    <tbody id="tabela2">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
+            </div>
 
-
-
+        </div>
 
     </main>
 
