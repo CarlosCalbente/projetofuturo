@@ -187,7 +187,10 @@ main{
 
 
 /* ======================================= SUAS CATEGORIAS ======================================= */
-
+.infoGeral{
+    display:grid;
+    background-color: var(--card);
+}
 .infocat {
     display: flex;
     justify-content: space-between;
@@ -209,7 +212,7 @@ main{
 }
 
 
-/* ======================================= LISTA DE CATEGORIAS ======================================= */
+/* LISTA DE CATEGORIAS */
 
 .lista-categorias {
     display: grid;
@@ -218,7 +221,7 @@ main{
 }
 
 
-/* ======================================= SIDEBAR ======================================= */
+/*  SIDEBAR  */
 
 .lista ul {
     list-style: none;
@@ -226,6 +229,5 @@ main{
     padding: 0;
 }
 
-/* =========== NOVAS CATEGORIAS ================= */
+/*  NOVAS CATEGORIAS */
 
-.
