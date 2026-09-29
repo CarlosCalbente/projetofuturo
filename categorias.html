@@ -197,48 +197,179 @@
 
             <!-- ============================== SUAS CATEGORIAS ============================== -->
 
-            <div class="infocat">
-                <h2>Suas Categorias</h2>
-                <select id="filtro-categorias">
-                    <option value="todas">
-                        Todas as categorias
-                    </option>
-                    <option value="receita">
-                        Receitas
-                    </option>
-                    <option value="despesa">
-                        Despesas
-                    </option>
-                </select>
-            </div>
+            <div>
+                <div class="infocat">
+                    <h2>Suas Categorias</h2>
+                    <select id="filtro-categorias">
+                        <option value="todas">
+                            Todas as categorias
+                        </option>
+                        <option value="receita">
+                            Receitas
+                        </option>
+                        <option value="despesa">
+                            Despesas
+                        </option>
+                    </select>
+                </div>
 
 
-            <!-- =========================== LISTA DE CATEGORIAS =========================== -->
+                <!-- =========================== LISTA DE CATEGORIAS =========================== -->
 
-            <div class="lista-categorias"
-                id="lista-categorias">
-                <!--
-                    As categorias serão adicionadas aqui dinamicamente pelo JavaScript
-                -->
-            </div>
+                <div class="lista-categorias"
+                    id="lista-categorias">
+                    <!--
+                        As categorias serão adicionadas aqui dinamicamente pelo JavaScript
+                    -->
+                </div>
 
-            <!-- =========================== NOVAS CATEGORIAS =========================== -->
-            
-            <div class="painel-categoria"
-                id = "painel-categoria">
-                <h3>Adicionar Novas Categorias </h3>
-            </div>
+                <!-- =========================== NOVAS CATEGORIAS =========================== -->
+                
+                <div class="painel-categoria"
+                    id = "painel-categoria">
+                    <h2>Adicionar Novas Categorias </h2>
+                </div>
 
-            <form id="add-cat">
-                <label for="nome-categoria">
-                    Nome da Categoria   
-                </label>
+                <form id="add-cat">
+                    <label for="nome-categoria">
+                        Nome da Categoria   
+                    </label>
 
+                    <input  
+                        tipe="text" 
+                        placeholder="Ex:Viagens"    
+                        id="nome-categoria" required
+                    >
 
+                    <p>Tipo de categoria</p>
 
+                    <button type="button" value="receita">
+                        Receita
+                    </button>
 
+                    <button type="button" value="Despesa">
+                        Despesa
+                    </button>
 
-            </form>
+                <!-- ====ICONES ======= -->
+
+                    <p>Ícone da Categoria</p>
+                    <div id="icon-categoria">
+                        <input type="image" 
+                        id="casa" 
+                        name="icone" 
+                        value="casa"
+                        >
+                        <label for="casa">
+                            <img src="img/casa.png">
+                        </label>
+
+                        <input type="image"
+                        id="alimentacao"
+                        name="icone"
+                        value="alimentacao"
+                        >
+                        <label for="alimentacao">
+                            <img src="img/talheres.png">
+                        </label>
+
+                        <input type="image"
+                        id="transporte"
+                        name="icone"
+                        value="transporte"                  
+                        >
+                        <label for="transporte">
+                            <img src="img/carro.png">
+                        </label>
+
+                        <input type="image"
+                        id="hospital"
+                        name="icone"
+                        value="hospital"
+                        >
+                        <label for="hospital">
+                            <img src="img/cruz.png">
+                        </label>
+
+                        <input type="image"
+                        id="lazer"
+                        name="icone"
+                        value="lazer"
+                        >
+                        <label for="lazer">
+                            <img src="img/comando.png">
+                        </label>
+
+                        <input type="image"
+                        id="educacao"
+                        name="icone"
+                        value="educacao"
+                        >
+                        <label for="educacao">
+                            <img src="img/livro.png">
+                        </label>
+
+                        <input type="image"
+                        id="trabalho"
+                        name="icone"
+                        value="trabalho"
+                        >
+                        <label for="trabalho">
+                            <img src="img/mala.png">
+                        </label>
+
+                        <input type="image"
+                        id="investimento"
+                        name="icone"
+                        value="investimento"
+                        >
+                        <label for="investimento">
+                            <img src="img/grafico.png">
+                        </label>
+
+                        <input type="image"
+                        id="viagem"
+                        name="icone"
+                        value="viagem"
+                        >
+                        <label for="viagem">
+                            <img src="img/aviao.png">
+                        </label>
+
+                        <input type="image"
+                        id="mercado"
+                        name="icone"
+                        value="mercado"
+                        >
+                        <label for="mercado">
+                            <img src="img/carrinho.png">
+                        </label>
+
+                        <input type="image"
+                        id="saude"
+                        name="icone"
+                        value="saude"
+                        >
+                        <label for="saude">
+                            <img src="img/coracao.png">
+                        </label>
+                    </div>
+
+                    <label for="descricao-categoria"> 
+                        Descrição(Opcional)
+                    </label>
+
+                    <input
+                    type="text"
+                    id="descricao-categoria"
+                    placeholder="Ex: Despesas com aluguel, condominio, etc"
+                    >
+
+                    <button type="submit">
+                        Salvar Categoria
+                    </button>
+                </form>
+            </div>    
         </div>
     </main>
 </body>
