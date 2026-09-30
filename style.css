@@ -255,7 +255,9 @@ main{
     padding: 10px;
 }
 
-#newtrans {
+
+
+/* #newtrans {
 grid-column: 3;
 display: flex;
 flex-direction: column;
@@ -265,4 +267,4 @@ font-weight: bold;
 padding: 10px;
 
 
-}
+} */
