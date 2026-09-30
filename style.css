@@ -225,3 +225,17 @@ main{
     margin: 0;
     padding: 0;
 }
+/* ======================================= TRANSAÇÕES ======================================= */
+#transacoes{
+    background-color: var(--card); 
+}
+#topo{
+    display: flex;
+    text-align: center;
+}
+#botao_ntransacao{
+    padding: 10px;
+    background-color: var(--green);
+    border-radius: 5px;
+
+}
