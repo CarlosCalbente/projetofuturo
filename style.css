@@ -258,8 +258,31 @@ main{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ======================================= TRANSAÇÕES ======================================= */
-#newtrans {
+
+#topo { 
+    display: flex;
+    margin-top: 10px;
+    
+
+}
+
+/* #newtrans {
 grid-column: 3;
 display: flex;
 flex-direction: column;
@@ -269,4 +292,4 @@ font-weight: bold;
 padding: 10px;
 
 
-} */
+}  */
