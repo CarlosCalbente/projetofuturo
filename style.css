@@ -283,15 +283,18 @@ main{
 }
 
 #newtran {
-color: white;
-border-color: var(--verde);
-background-color: var(--verde);
-border-radius: 5px;
-/* font-weight: bold; */
-border-style: solid;
-width: 140px;
-height: 30px;
-justify-content: center;
-
+    color: white;
+    font-size: 14px;
+    border-color: var(--verde);
+    background-color: var(--verde);
+    border-radius: 5px;
+    font-weight: bold;
+    border-style: solid;
+    width: 150px;
+    height: 35px;
 }
 
+#transacoes {
+    background-color: var(--pink);
+    border-radius: 10px;
+}
