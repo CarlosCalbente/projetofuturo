@@ -1,237 +1,212 @@
-<!DOCTYPE html>
-<html lang="PT-br">
-<head>
-    <!-- Permite acentos e caracteres especiais -->
-    <meta charset="UTF-8">
-
-    <!-- Faz a página adaptar-se ao tamanho da tela -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Nome da aba do navegador -->
-    <title>Controle Financeiro</title>
-
-    <!-- Liga o HTML ao CSS -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-
-
-<body>
+<!DOCTYPE html> 
+<html lang="PT-br"> 
+<head> 
+    <!-- Permite acentos e caracteres especiais --> 
+    <meta charset="UTF-8"> 
     
+    <!-- Faz a página adaptar-se ao tamanho da tela --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <!-- Nome da aba do navegador --> 
+    <title>Controle Financeiro</title> 
+    
+    <!-- Liga o HTML ao CSS --> 
+    <link rel="stylesheet" href="style.css"> 
+    
+</head> 
+    
+    
+    
+<body> 
 
-    <main>
-
-
-        <!-- ==========================================CONTEUDO PRINCIPAL================================-->
-
-
-        <!-- ===========================================SIDEBAR========================================-->
-
-        <nav id="sidebar">
-            <p id="text">
-                <img class="foto2" src="img/balanca.png">
-                Minhas Finanças
-            </p>
-
-            <ul class="lista">
-                <li>
-                    <a href="index.html">
-                        <img class="foto1" src="img/casa1.png"
-                        onmouseover="this.src='img/casa2.png'"
-                        onmouseout="this.src='img/casa1.png'">
-                        Visão Geral
-                    </a>
-                </li>
-                <li>
-                    <a href="transacoes.html">
-                        <img class="foto1" src="img/lista1.png"
-                        onmouseover="this.src='img/lista2.png'"
-                        onmouseout="this.src='img/lista1.png'">
-                        Transações
-                    </a>
-                </li>
-                <li>
-                    <a href="categorias.html">
-                        <img class="foto1" src="img/ticket1.png"
-                        onmouseover="this.src='img/ticket2.png'"
-                        onmouseout="this.src='img/ticket1.png'">
-                        Categorias
-                    </a>
-                </li>
-                <li>
-                    <a href="metas.html">
-                        <img class="foto1" src="img/alvo1.png"
-                        onmouseover="this.src='img/alvo2.png'"
-                        onmouseout="this.src='img/alvo1.png'">
-                        Metas
-                    </a>
-                </li>
-                <li>
-                    <a href="relatorios.html">
-                        <img class="foto1" src="img/grafico1.png"
-                        onmouseover="this.src='img/grafico2.png'"
-                        onmouseout="this.src='img/grafico1.png'">
-                        Relatórios
-                    </a>
-                </li>
-                <li>
-                    <a href="configuracoes.html">
-                        <img class="foto1" src="img/config1.png"
-                        onmouseover="this.src='img/config2.png'"
-                        onmouseout="this.src='img/config1.png'">
-                        Configurações
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- ===========================================TOPO======================================== -->
+    
+    <main> 
+        
+        
+        <!-- ==========================================CONTEUDO PRINCIPAL================================--> 
+        
+        
+        <!-- ===========================================SIDEBAR========================================--> 
+        
+        <nav id="sidebar"> 
+            <p id="text"> 
+                <img class="foto2" src="img/balanca.png"> 
+                Minhas Finanças 
+            </p> 
             
-        <div id="conteudo">
+            <ul class="lista"> 
+                <li> 
+                    <a href="index.html"> 
+                        <img class="foto1" src="img/casa1.png" 
+                        onmouseover="this.src='img/casa2.png'" 
+                        onmouseout="this.src='img/casa1.png'"> 
+                        Visão Geral 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="transacoes.html"> 
+                        <img class="foto1" src="img/lista1.png" 
+                        onmouseover="this.src='img/lista2.png'" 
+                        onmouseout="this.src='img/lista1.png'"> 
+                        Transações 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="categorias.html"> 
+                        <img class="foto1" src="img/ticket1.png" 
+                        onmouseover="this.src='img/ticket2.png'" 
+                        onmouseout="this.src='img/ticket1.png'"> 
+                        Categorias 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="metas.html"> 
+                        <img class="foto1" src="img/alvo1.png" 
+                        onmouseover="this.src='img/alvo2.png'" 
+                        onmouseout="this.src='img/alvo1.png'"> 
+                        Metas 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="relatorios.htm"> 
+                        <img class="foto1" src="img/grafico1.png" 
+                        onmouseover="this.src='img/grafico2.png'" 
+                        onmouseout="this.src='img/grafico1.png'"> 
+                        Relatórios 
+                    </a> 
+                </li> 
+                <li> 
+                    <a href="configuracoes.html"> 
+                        <img class="foto1" src="img/config1.png" 
+                        onmouseover="this.src='img/config2.png'" 
+                        onmouseout="this.src='img/config1.png'"> 
+                        Configurações 
+                    </a> 
+                </li> 
+            </ul> 
+        </nav> 
+        
+        <!-- ===========================================TOPO======================================== --> 
 
-            <div id="topo">
-                <div id="boas-vindas">
-                    <h3>Transações</h3>
-                    <p>Acompanhe todas as suas movimentações financeiras.</p>
-                </div>
-
-                <div>
-                    <button id="newtrans" type="button">+ Nova Transação</button>
-                </div>
-
-            </div>
-            <div id="buscas">
-                <div class="buscar">
-
-                </div>
-
-                <div class="mes_ano">
-                        
-                </div>
-
-                <div class="busca_categoria">
-
-                </div>
-            </div>    
-
-            <!-- ===================================CARDS======================================================= -->
-
-            <div id="cards">
-                <div class="card">
-                    <div class="title-card">
-                        <p>Entradas</p>
-                    </div>
-                    <p id="valor-entradas"></p>
-                    <p id="anteriorR">Ultima entrada</p>
-                </div>
-
-                <div class="card">
-                    <div class="title-card">
-                        <p>Saídas</p>
-                    </div>
-                    <p id="valor-saidas"></p>
-                    <p id="anteriorR">Ultima saída</p>
-                </div>
-                        
-                <div class="card">
-                    <div class="title-card">
-                        <p>Saldo do Mês</p>
-                    </div>
-                    <p id="valor-saldo"></p>
-                </div>
-            </div>
-
+        <div id="conteudo"> 
             
-            <!-- =======================DESPESAS POR CATEGORIA================================= -->
+            <div id="topo"> 
+                <div id="boas-vindas"> 
+                    <h3>Transações</h3> 
+                    <p>Acompanhe todas as suas movimentações financeiras.</p> 
+                </div> 
+                
+                <div> 
+                    <button id="newtran" type="button">+ Nova Transação</button> 
+                </div> 
+                
+            </div> 
+            <div id="buscas"> 
+                <div class="buscar"> 
+                    
+                </div> 
+                
+                <div class="mes_ano"> 
 
-            <div id="transacoes">
-                <p id="listagem_transacao">Lista de Transações</p>
+                </div> 
+                
+                <div class="busca_categoria"> 
+                    
+                </div> 
+            </div>     
+            
+            <!-- ===================================CARDS======================================================= --> 
+            
+            <div id="cards"> 
+                <div class="card"> 
+                    <div class="title-card"> 
+                        <p>Entradas</p> 
+                    </div> 
+                    <p id="valor-entradas"></p> 
+                    <p id="anteriorR">Ultima entrada</p> 
+                </div> 
+                
+                <div class="card"> 
+                    <div class="title-card"> 
+                        <p>Saídas</p> 
+                    </div> 
+                    <p id="valor-saidas"></p> 
+                    <p id="anteriorR">Ultima saída</p> 
+                </div> 
 
-                <div id="quantidade_transacoes">
-                    <p id="numeracao_transacoes">Mostrando 0 transações</p>
-                </div>
+                <div class="card"> 
+                    <div class="title-card"> 
+                        <p>Saldo do Mês</p> 
+                    </div> 
+                    <p id="valor-saldo"></p> 
+                </div> 
+            </div> 
+            
 
-                <table>
-                    <thead>
-                        <tr class="title-transacoes">
-                            <th>Data</th>
-                            <th>Descrição</th>
-                            <th>categoria</th>
-                            <th>Tipo</th>
-                            <th>Valor</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="tabela2">
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-        </div>
-
-    </main>
-
-</body>
+            <!-- =======================DESPESAS POR CATEGORIA================================= --> 
+            
+            <div id="transacoes"> 
+                <p id="listagem_transacao">Lista de Transações</p> 
+                
+                <div id="quantidade_transacoes"> 
+                    <p id="numeracao_transacoes">Mostrando 0 transações</p> 
+                </div> 
+                
+                <table> 
+                    <thead> 
+                        <tr class="title-transacoes"> 
+                            <th>Data</th> 
+                            <th>Descrição</th> 
+                            <th>categoria</th> 
+                            <th>Tipo</th> 
+                            <th>Valor</th> 
+                        </tr> 
+                    </thead> 
+                    
+                    <tbody id="tabela2"> 
+                        <tr> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr> 
+                        <tr> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr> 
+                        <tr> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr> 
+                        <tr> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr> 
+                        <tr> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr> 
+                    </tbody> 
+                </table> 
+                
+            </div> 
+            
+        </div> 
+        
+    </main> 
+    
+</body> 
 </html>
