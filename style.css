@@ -104,18 +104,32 @@ main{
     height: 25px;
 
 }
+/* #topo1{
+    display: flex;
+    width: 100%;
+} */
+
+
 #cards{
-    display:grid;
+    display:flex;
+    background-color: var(--purple);
     padding: 20px 10px;
     grid-template-columns: repeat(4,1fr);
     margin-bottom: 22px;
     gap:10px;
+    
 }
 
 .card{
-    background-color: var(--card);
+    /* background-color: var(--card); */
+    background-color: var(--red);
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin: 3px;
     border-radius: 10px;
-    padding: 20px;
+    border-style: none;
+    padding: 25px;
     box-shadow: 0 3px 10px rgb(0,0,0,0.4);
 }
 .painel{
@@ -294,7 +308,7 @@ main{
 
 /* ======================================= TRANSAÇÕES ======================================= */
 
-#topo { 
+#topo2 { 
     display: flex;
     margin: 10px 15px;
     justify-content: space-between;
@@ -313,7 +327,7 @@ main{
     height: 35px;
 }
 
-#transacoes {
+#Ltransacoes {
     background-color: var(--pink);
     border-radius: 10px;
 }
