@@ -104,13 +104,23 @@ main{
     height: 25px;
 
 }
-/* #topo1{
-    display: flex;
+#topo1{
+    display: grid;
     width: 100%;
-} */
+}
 
 
-#cards{
+#cards1{
+    display:flex;
+    background-color: var(--purple);
+    padding: 20px 150px;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 22px;
+    gap:10px;
+    
+}
+
+/* #cards2{
     display:flex;
     background-color: var(--purple);
     padding: 20px 10px;
@@ -118,10 +128,39 @@ main{
     margin-bottom: 22px;
     gap:10px;
     
+} */
+
+.card1{
+    /* background-color: var(--card); */
+    background-color: var(--red);
+    display: grid;
+    width: 200px;
+    height: 100px;
+    margin: 3px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.4);    
 }
 
-.card{
-    /* background-color: var(--card); */
+#anteriorR{
+    color: var(--text-secondary);
+    font-size: 11px;
+    align-items: end;
+}
+
+#anteriorD{
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+#anteriorV{
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+/* .card2{
+    backgroun    d-color: var(--card);
     background-color: var(--red);
     display: flex;
     width: 200px;
@@ -131,15 +170,51 @@ main{
     border-style: none;
     padding: 25px;
     box-shadow: 0 3px 10px rgb(0,0,0,0.4);
-}
+} */
+
 .painel{
     display: grid;
-    background-color:var(--card);
+    border-style: none;
+    /* background-color:var(--card); */
+    background-color: var(--orange);
     border-radius: 10px;
-    padding:20px;
+    padding:15px;
     box-shadow: 0 3px 10px rgb(0,0,0,0.4);
     grid-template-columns: 1fr 1fr;
+    gap : 15px;
 }
+
+#grafico1{
+    border-style: none;
+    background-color: var(--card);
+    border-radius: 10px;
+    padding: 10px;
+    width: 540px;
+    height: 150px;
+}
+
+#grafico2{
+    
+    border-style: none;
+    background-color: var(--card);
+    border-radius: 10px;
+    padding: 10px;
+    width: 540px;
+    height: 150px;
+    padding-right: 10px;
+}
+
+#transacoes{
+    display: flex;
+    border-style: none;
+    background-color: var(--card);
+    border-radius: 10px;
+    padding: 10px;
+    align-content: end;
+    height: 220px;
+    /* width: 1000px; */
+}
+
 .legenda{
     display: flex;
     gap: 18px;
