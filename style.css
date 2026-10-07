@@ -231,7 +231,11 @@ main{
     display: inline ;
     align-content: end;
     grid-column-start: 3;
+<<<<<<< HEAD
     font-size: 10px;
+=======
+    font-size: 1px;
+>>>>>>> 78213e61e1ae227ec3e8938c3ad69166ab3e7c86
 }
 
 .quadrado {
