@@ -134,15 +134,7 @@ main{
     gap:10px;
     
 }
-/* #cards2{
-    display:flex;
-    background-color: var(--purple);
-    padding: 20px 10px;
-    grid-template-columns: repeat(4,1fr);
-    margin-bottom: 22px;
-    gap:10px;
-    
-} */
+
 .card1{
     background-color: var(--card);
     display: grid;
@@ -184,23 +176,38 @@ main{
     font-size: 24px;
     font-weight: bold;
 }
-/* .card2{
-    backgroun    d-color: var(--card);
-    background-color: var(--red);
+
+#cards2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-bottom: 22px;
+    gap: 10px;
+}
+
+.card2 {
+    background-color: var(--card);
     display: flex;
-    width: 200px;
-    height: 100px;
+    align-items: center;
+    gap: 15px;
     margin: 3px;
     border-radius: 10px;
     border-style: none;
-    padding: 25px;
-    box-shadow: 0 3px 10px rgb(0,0,0,0.4);
-} */
+    padding: 10px 25px;
+    height: 125px;
+    min-height: 0;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.4);
+    width: 100%;
+    min-width: 0;
+}
+
 .painel{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
+
 #grafico1{
     display: grid;
     border-style: none;
@@ -210,6 +217,7 @@ main{
     grid-template-columns: repeat(2, 1fr);
     box-shadow: 0 3px 10px rgb(0,0,0,0.4);
 }
+
 #grafico2{
     display: grid;
     border-style: none;
@@ -229,7 +237,7 @@ main{
     padding: 10px;
     align-content: start;
     height: 220px;
-    grid-column: 1/-1; /* ( preciso de explicação) */
+    grid-column: 1/-1;
     padding-right: 20px;
     box-shadow: 0 3px 10px rgb(0,0,0,0.4);
 }
@@ -378,11 +386,17 @@ main{
 
 /* ======================================= TRANSAÇÕES ======================================= */
 
-#topo2 { 
-    display: flex;
+#topo2 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 10px;
     margin: 10px 15px;
-    justify-content: space-between;
-    width: 190%;
+    width: 100%;
+}
+
+#buscas {
+    grid-column: 1 / -1;
 }
 
 #newtran {
@@ -398,6 +412,34 @@ main{
 }
 
 #Ltransacoes {
-    background-color: var(--pink);
+    display: grid;
+    border-style: none;
+    background-color: var(--card);
     border-radius: 10px;
+    padding: 10px;
+    align-content: start;
+    height: 220px;
+    grid-column: 1/-1; /* ( preciso de explicação) */
+    padding-right: 20px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.4);
+}
+
+#Ltransacoes table {
+    width: 100%;
+}
+
+.ultima-transacao {
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+#quantiT {
+    text-align: right;
+}
+
+.card2 img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
 }

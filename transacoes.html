@@ -100,47 +100,69 @@
                     <button id="newtran" type="button">+ Nova Transação</button> 
                 </div> 
                 
-            </div> 
             <div id="buscas"> 
                 <div class="pesqT"> 
                     
                 </div> 
                 
-                <div class="mes_ano"> 
-
-                </div> 
+                <div id="periodo">
+                
+                <select id="mes">
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <select id="ano">
+                    
+                </select>
+            </div>
                 
                 <div class="buscaC"> 
                     
                 </div> 
-            </div>     
-            
+            </div>
+        </div>
             <!-- ===================================CARDS======================================================= --> 
             
-            <div id="cards"> 
-                <div class="card"> 
-                    <div class="title-card"> 
-                        <p>Entradas</p> 
-                    </div> 
-                    <p id="valor-entradas"></p> 
-                    <p id="anteriorR">Ultima entrada</p> 
-                </div> 
-                
-                <div class="card"> 
-                    <div class="title-card"> 
-                        <p>Saídas</p> 
-                    </div> 
-                    <p id="valor-saidas"></p> 
-                    <p id="anteriorR">Ultima saída</p> 
-                </div> 
+            <div id="cards2">
+                <div class="card2">
+                    <img src="img/receita-circulo.png" alt="Receita-positiva">
 
-                <div class="card"> 
-                    <div class="title-card"> 
-                        <p>Saldo do Mês</p> 
-                    </div> 
-                    <p id="valor-saldo"></p> 
-                </div> 
-            </div> 
+                    <div class="texto-card">
+                        <p>Entradas</p>
+                        <p id="valor-entradas"></p>
+                        <p class="ultima-transacao">Ultima entrada</p>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img src="img/despesa-circulo.png" alt="Despesa-negativa">
+
+                    <div class="texto-card">
+                        <p>Saídas</p>
+                        <p id="valor-saidas"></p>
+                        <p class="ultima-transacao">Ultima saída</p>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img src="img/saldov.png" alt="Saldo">
+
+                    <div class="texto-card">
+                        <p>Saldo</p>
+                        <p id="valor-saldo"></p>
+                    </div>
+                </div>
+            </div>
             
 
             <!-- =======================DESPESAS POR CATEGORIA================================= --> 
