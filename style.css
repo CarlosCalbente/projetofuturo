@@ -241,36 +241,44 @@ main{
     padding-right: 20px;
     box-shadow: 0 3px 10px rgb(0,0,0,0.4);
 }
+
 .legenda1{
     display: flex;
     gap: 18px;
 }
+
 .legenda1 p{
     display:flex;
     gap: 6px;
     font-size: 15px;
 }
+
 .legenda2{
     display: inline ;
     align-content: end;
     grid-column-start: 3;
     font-size: 15px;
 }
+
 .quadrado {
     width: 15px;
     height: 15px;
 }
+
 .bolinha {
     width: 20px;
     height: 20px
 }
+
 #graficobarras{
     position: relative;
     width: 100%;
     height: 260px;
     margin-top:20px;
 }
+
 /* =========================================== CATEGORIAS =========================================== */
+
 .card-categoria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -278,6 +286,7 @@ main{
     padding: 20px 10px;
     margin-bottom: 22px;
 }
+
 .card-categorias {
     display: flex;
     align-items: flex-start;
@@ -287,13 +296,16 @@ main{
     padding: 30px;
     box-shadow: 0 3px 10px rgb(0, 0, 0, 0.4);
 }
+
 .iconeC img {
     width: 60px;
     height: 60px;
 }
+
 .infoC p {
     margin: 5px 0;
 }
+
 /* ======================================= SUAS CATEGORIAS ======================================= */
 .areacat {
 
@@ -302,26 +314,31 @@ main{
     gap: 20px;
     margin: 10px;
 }
+
 .infocat {
-    display:grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: var(--card);
-    grid-template-columns: 2fr 1fr;
-    column-gap: 20px;
     border-radius: 10px;
+    padding: 20px;
+    min-height: 450px;
+    min-width: 0;
 }
+
 .suas-cat {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    width: 145%;
-    /* justify-content: space-between; */
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    gap: 15px;
 }
+
 .infocat h2 {
     margin: 0;
 }
+
 #filtro-categorias {
     padding: 10px 15px;
     border: 1px solid #ccc;
@@ -329,12 +346,17 @@ main{
     background-color: white;
     cursor: pointer;
 }
+
 /* LISTA DE CATEGORIAS */
+
 .lista-categorias {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
+    width: 100%;
+    align-content: start;
 }
+
 /*  SIDEBAR  */
 .lista ul {
     list-style: none;
@@ -342,47 +364,74 @@ main{
     padding: 0;
 }
 /*  NOVAS CATEGORIAS */
-.painel-categoria {    
-    grid-row: 1;
+
+.painel-cat {
     background-color: var(--card);
-    padding: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 0;
 }
+
+.painel-categoria {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
 #icon-categoria {
     display: grid;
-    grid-template-columns: repeat(4, 50px);
-    gap: 10px;
+    grid-template-columns: repeat(4, 55px);
+    gap: 15px;
+    justify-content: space-between;
+    margin: 10px 0 20px;
 }
+
+/* ICONES E CAIXA DE TEXTO*/
 #icon-categoria input[type="radio"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
 }
+
 #icon-categoria img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
+
+/* Efeito de hover para aumentar o tamanho do ícone */
+#icon-categoria label:hover {
+    transform: scale(1.12);
+}
+
 #add-cat {
-    grid-column: 2;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background-color: var(--card);
-    padding: 10px;
+    gap: 12px;
+    padding: 0;
 }
 
+#add-cat input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
 
+#add-cat button {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--background);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#add-cat button:hover {
+    background-color: var(--border);
+}
 
 /* ======================================= TRANSAÇÕES ======================================= */
 
