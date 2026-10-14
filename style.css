@@ -379,10 +379,12 @@ main{
 
 #icon-categoria {
     display: grid;
-    grid-template-columns: repeat(4, 55px);
-    gap: 15px;
-    justify-content: space-between;
-    margin: 10px 0 20px;
+    grid-template-columns: repeat(6, 70px);
+    column-gap: 1px;
+    row-gap: 0px;
+    justify-content: start;
+    margin: 0;
+    align-items: start;
 }
 
 /* ICONES E CAIXA DE TEXTO*/
@@ -397,6 +399,14 @@ main{
     width: 70px;
     height: 70px;
     object-fit: contain;
+}
+
+#icon-categoria label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    transition: transform 0.2s;
 }
 
 /* Efeito de hover para aumentar o tamanho do ícone */
